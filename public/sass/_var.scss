@@ -1,0 +1,94 @@
+// VARIABLES
+
+//COLORS
+//B&W
+
+$color-primary: #f6f5f5;
+$color-secondary: #276678;
+$color-tirtiary: #1687a7;
+$color-tirtiary-dark: #276678;
+$color-primary-light: #d3e0ea;
+$color-border-img: $color-tirtiary;
+
+$color-sections-LUK: rgba(136, 136, 136, 0.1);
+
+$color-font-header: #e9e9e9;
+$shadow-bottom: rgba(70, 70, 70, 0.4);
+
+$color-font-primary: rgb(49, 49, 49);
+
+$bg-color: #E79A96;
+$shadow: 0 1rem 2rem $shadow-bottom;
+
+// FONTS
+
+@font-face{
+    font-family: 'Logo';
+    src: url('../fonts/BlackHanSans-Regular.ttf');
+    font-weight: 400;
+} 
+@font-face{
+    font-family: 'Nav';
+    src: url('../fonts/Teko-Medium.ttf');
+    font-weight: 500;
+}  
+@font-face{
+    font-family: 'Teko-bold';
+    src: url('../fonts/Teko-Bold.ttf');
+    font-weight: 700;
+} 
+@font-face{
+    font-family: 'Montserrat-400-italic';
+    src: url('../fonts/Montserrat/Montserrat-Italic.ttf');
+    font-weight: 400;
+}  
+@font-face{
+    font-family: 'Montserrat-600-semibold';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Montserrat-400-regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Montserrat-100-thin';
+    src: url('../fonts/Montserrat/Montserrat-Thin.ttf');
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'Montserrat-300-light';
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Montserrat-100-extralight-italic';
+    src: url('../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf');
+    font-weight: 100;
+}
+@font-face{
+    font-family: 'Sansita-medium';
+    src: url('../fonts/Sansita/SansitaSwashed-ExtraBold.ttf');
+    font-weight: normal;
+}
+//Social icons
+
+@font-face{
+    font-family: 'social-icons-regular';
+    src: url('../fonts/webfonts/fa-regular-400.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'social-icons-solid';
+    src: url('../fonts/webfonts/fa-solid-900.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face{
+    font-family: 'social-icons-brands';
+    src: url('../fonts/webfonts/fa-brands-400.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}

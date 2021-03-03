@@ -1,0 +1,52 @@
+
+// paragraph for content section
+
+.section-p{
+    font-family: 'Montserrat-400-regular';
+    font-weight: 400;
+    font-size: 100%;
+    text-align: justify;
+    letter-spacing: .1rem;
+    line-height: 145%;
+
+    &::first-letter{
+        font-family: 'Sansita-medium';
+        color: $color-primary-light;
+        font-size: 200%;
+    }
+}
+
+// paragraph for content header
+
+.header-p{
+    line-height: 1.6;
+    letter-spacing: .16rem;
+    font-size: 1rem;
+    font-family: 'Montserrat-400-italic';
+    color: $color-secondary;
+
+    span{
+        font-family: 'Montserrat-600-semibold';
+        color:$color-tirtiary;
+    }
+}
+.lm{
+    margin-left: 1rem;
+}
+h1,h2{
+    font-family: 'Sansita-medium';
+    font-weight: 400;
+    color: $color-secondary;
+    letter-spacing: 4px;
+}
+h1{
+    font-size: 900%;
+    
+}
+h2{
+    font-size: 400%;
+}
+small{
+    font-size: 150%;
+    color: #dbdbdb;               
+}

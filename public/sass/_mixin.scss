@@ -1,0 +1,28 @@
+//MIXIN
+@mixin ie-fix {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+        @content
+    }
+};
+@mixin animation($name, $width-1 ,$width-2) {
+    @keyframes #{$name}{
+        0%{width: $width-1; background-color: $color-tirtiary;}
+      
+      100%{width: $width-2; background-color: $color-tirtiary;}
+    }
+}
+
+@mixin table-data-animation {
+    
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        opacity: .3;
+}

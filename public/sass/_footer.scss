@@ -1,0 +1,95 @@
+//FOOTER
+
+.footer{
+    grid-column: 1 / -1;
+    grid-row: -1;
+
+
+    width: 100%;
+    height: 20rem;
+    background-color: $color-tirtiary-dark;
+    @include ie-fix {
+        width: 100vw;
+    }
+    display: flex;
+    align-items: center;
+
+    &__mail{
+        width: 33.33%;
+        height: max-content;
+        text-align: center;
+        border-right: 1px solid white;
+
+        a{
+            color: #dbdbdb;
+            text-decoration: underline;
+            &:hover{
+                color: grey;
+            }
+        }
+    }
+
+    &__social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width : 33.33%;
+        height: 80%;
+        margin: auto;
+        
+        ul{
+            li{
+                padding: 0 2rem;
+                display: inline-block;
+    
+                a{
+                    font-size: 300%;
+                    
+                    .social-1{
+                        font-family: 'social-icons-brands';
+                        color: #ffffff;
+                        transition: all .2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .social-2{
+                        font-family: 'social-icons-solid';                        
+                        font-size: inherit;
+                        color: #fff;
+                        transition: all .2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .social-3{
+                        font-family: 'social-icons-solid';
+                        color: #fff;
+                        transition: all .2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    .social-4{
+                        font-family: 'social-icons-solid';
+                        color: #fff;           
+                        transition: all .2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }           
+                    }
+                }
+            }
+        }
+    }        
+    &__copy{
+        
+        width: 33.33%;
+        letter-spacing: .1rem;          
+        text-align: center;
+        border-left: 1px solid white;
+        height: min-content;
+        margin: auto;
+       
+    }
+}

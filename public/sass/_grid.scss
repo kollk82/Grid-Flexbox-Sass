@@ -1,0 +1,7 @@
+//GRID
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
+    grid-template-rows: 12vh repeat(13, min-content) min-content 20rem;
+}

@@ -1,0 +1,84 @@
+//NAVIGATION
+
+.nav{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 2.6vh;
+    right: -27rem;
+    
+    height: 6rem;
+    width: 33rem;
+    
+    padding: 2rem;
+    background-color: $color-primary-light;
+    box-shadow: $shadow;
+    border-radius: 1rem 0 0 1rem;  
+    line-height: 1.4;        
+    @include ie-fix {
+        margin-top: 20px;
+    }
+    //transform: translateX(129rem);
+    transition: transform .4s ease-out;
+    &:hover,
+    &:visited{
+        transform: translateX(-27rem);
+        .nav__link{
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    ul{
+        li{
+            display: inline-block;
+            text-transform: uppercase;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__link{
+        font-family: 'Nav', sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+        //line-height: 1;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s;
+        transition-delay: .3s;
+        transition: color .2s;
+
+        &:visited,
+        &:link{            
+            color: $color-secondary;
+        }
+        &:hover,
+        &:active{
+            color: $color-tirtiary;
+            text-decoration: underline;
+        }
+        &:active{
+            color: $color-primary-light;
+            text-decoration: none;
+        }
+    }
+    &::before{
+        content: '|||';
+        font-family: 'Nav', sans-serif;
+        font-size: 3rem;
+        display: block;
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: .8rem;
+        left: 1.5rem;
+        letter-spacing: .3rem;
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s;
+    }
+}

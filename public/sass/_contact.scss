@@ -1,0 +1,24 @@
+//Form
+
+.contact{
+    grid-column: 2 / 12;
+    grid-row: 15;
+
+   
+
+    &__header{        
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__form{
+        width: 100%;
+        height: auto;
+        &-header{
+            text-align: center;
+        }
+    }
+ }
+ 
