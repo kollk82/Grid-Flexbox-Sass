@@ -1548,32 +1548,36 @@ small {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-item-align: center;
       align-self: center;
   height: 35rem;
   width: 100%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .mywork__links-one, .mywork__links-two {
-  background-color: transparent;
   width: 50%;
+  min-height: 30rem;
   background-repeat: no-repeat;
-  background-position: 50% top;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border: 2rem solid #f6f5f5;
-  border-radius: 500px;
+  background-position: left top;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
   cursor: pointer;
+  border: 2rem solid #f6f5f5;
+  opacity: .9;
 }
 
 .mywork__links-one a, .mywork__links-two a {
-  width: 66rem;
-  height: 31rem;
+  width: 70rem;
+  height: 35rem;
   z-index: 9999;
   border-radius: inherit;
   display: block;
@@ -1581,53 +1585,39 @@ small {
 
 .mywork__links-one {
   background-image: url(../img/work-1.jpg);
-  -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
-          box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
+  filter: blur(2px);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  z-index: -9999;
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
 }
 
 .mywork__links-one:hover {
+  filter: blur(0px);
   -webkit-filter: blur(0px);
-          filter: blur(0px);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 1;
-  -webkit-box-shadow: 10px 0 15px -2px #888;
-          box-shadow: 10px 0 15px -2px #888;
-  cursor: pointer;
-}
-
-.mywork__links-one:hover + .mywork__links-two {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
-          box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
-  z-index: 0;
-}
-
-.mywork__links-one:focus {
-  border: none;
+  -webkit-transform: rotateY(10deg);
+          transform: rotateY(10deg);
+  z-index: -9999;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .mywork__links-two {
   background-image: url(../img/work-2.jpg);
-  margin-left: -40rem;
-  z-index: 0;
-  -webkit-box-shadow: 0px 0px 10px rgba(151, 151, 151, 0.5);
-          box-shadow: 0px 0px 10px rgba(151, 151, 151, 0.5);
+  margin-left: -20rem;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  z-index: 9999;
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
 }
 
 .mywork__links-two:hover {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 3;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-transform: rotateY(10deg);
+          transform: rotateY(10deg);
+  z-index: 9999;
 }
 
 .gallery {
@@ -1677,6 +1667,7 @@ small {
   border-radius: 4px;
   -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
           box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
+  background-color: #adadad;
 }
 
 .gallery__photos > * {

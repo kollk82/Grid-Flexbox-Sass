@@ -24,70 +24,69 @@
 
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-self: center;
         height: 35rem;
         width: 100%;
-       
+        perspective: 1000px;
+        
 
         &-one,
         &-two{
-            background-color:transparent;
             width: 50%;
+            min-height: 30rem;
             background-repeat: no-repeat;      
-            background-position: 50% top;          
-            transition: all .2s ease-out; 
-            object-fit: contain;
-            border: 2rem solid $color-primary;
-            border-radius: 500px;
+            background-position: left top;          
+            transition: all .2s ease; 
+            object-fit: cover;
+            transform: rotateY(45deg);
             cursor: pointer;
-
+            border: 2rem solid  $color-primary;
+            opacity: .9;
+            
             a{
-                width: 66rem;
-                height: 31rem;
+                width: 70rem;
+                height: 35rem;
                 z-index: 9999;
                 border-radius: inherit;
                 display: block;
             }
-            
         }
         &-one{
            
             background-image: url(../img/work-1.jpg);
-            box-shadow: $shadow;
             filter: blur(2px);
-           
-         
+            -webkit-filter: blur(2px);
+            z-index: -9999;
+            transform: rotateY(30deg);
+          
             &:hover {
-               filter: blur(0px);
-                transform: scale(1.1);
-                z-index: 1;   
-                box-shadow: 10px 0 15px -2px #888;
-                cursor: pointer;
-
-                 + .mywork__links-two{ // immediately followed
-                    filter: blur(10px);
-                    transform: scale(.9);
-                    box-shadow: $shadow;
-                    z-index: 0;
-                }
-            }
-            &:focus{
-                border: none;
+                filter: blur(0px);
+                -webkit-filter: blur(0px);
+                transform: rotateY(10deg);
+                z-index: -9999;   
+                box-shadow: none;
+            
+                //   + .mywork__links-two{ // immediately followed
+                     
+                //      transform: rotateY(30deg);
+                //      z-index: 9999;
+                //  }
             }
         }
         &-two{
             background-image: url(../img/work-2.jpg);            
-            margin-left: -40rem;
-            z-index: 0;
-            box-shadow: 0px 0px 10px rgba(151, 151, 151, 0.5);
-            
+            margin-left: -20rem;
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            z-index: 9999;            
+            transform: rotateY(30deg);
 
             &:hover {
-                filter: blur(0px);
-                transform: scale(1.1);
-                z-index: 3;
+               
                 box-shadow: none;
+                transform: rotateY(10deg);
+                z-index: 9999;
             }
         }
     }
