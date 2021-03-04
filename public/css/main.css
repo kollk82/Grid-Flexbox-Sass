@@ -168,6 +168,55 @@ small {
   color: #dbdbdb;
 }
 
+.social-1 {
+  font-family: 'social-icons-brands';
+  color: #ffffff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.social-2 {
+  font-family: 'social-icons-solid';
+  font-size: inherit;
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.social-3 {
+  font-family: 'social-icons-solid';
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.social-4 {
+  font-family: 'social-icons-solid';
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-4:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .nav {
   display: block;
   position: fixed;
@@ -270,9 +319,9 @@ small {
   -ms-grid-columns: 1fr (minmax(min-content, 14rem))[10] 1fr;
       grid-template-columns: 1fr repeat(10, minmax(-webkit-min-content, 14rem)) 1fr;
       grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
-  -ms-grid-rows: 15rem (min-content)[13] min-content 20rem;
-      grid-template-rows: 15rem repeat(13, -webkit-min-content) -webkit-min-content 20rem;
-      grid-template-rows: 15rem repeat(13, min-content) min-content 20rem;
+  -ms-grid-rows: 15rem (min-content)[15] 20rem;
+      grid-template-rows: 15rem repeat(15, -webkit-min-content) 20rem;
+      grid-template-rows: 15rem repeat(15, min-content) 20rem;
 }
 
 .btn {
@@ -1573,6 +1622,7 @@ small {
   cursor: pointer;
   border: 4rem solid #276678;
   opacity: .9;
+  overflow: hidden;
 }
 
 .mywork__links-one a, .mywork__links-two a {
@@ -1600,6 +1650,7 @@ small {
   z-index: -9999;
   -webkit-box-shadow: none;
           box-shadow: none;
+  opacity: 1;
 }
 
 .mywork__links-two {
@@ -1618,6 +1669,7 @@ small {
   -webkit-transform: rotateY(10deg);
           transform: rotateY(10deg);
   z-index: 9999;
+  opacity: 1;
 }
 
 .gallery {
@@ -1723,10 +1775,78 @@ small {
 .contact__form {
   width: 50%;
   height: auto;
+  float: left;
 }
 
 .contact__form-header {
   text-align: center;
+}
+
+.contact__address {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.contact__address-header {
+  text-align: center;
+}
+
+.contact__address-box {
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #276678;
+  margin-left: 4rem;
+  font-size: 400%;
+  font-family: 'Sansita-medium';
+}
+
+.contact__address-box ul li {
+  padding: 5rem 0;
+  display: block;
+}
+
+.contact__address-box ul li i {
+  margin-right: 2rem;
+  font-size: 200%;
+  color: #f3af49;
+  vertical-align: middle;
+}
+
+.contact__address-box ul li a {
+  color: #276678;
+}
+
+.contact__address-box ul li a:hover {
+  color: #1687a7;
+}
+
+.map {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / 12;
+  -ms-grid-row: 16;
+  -ms-grid-row-span: 2;
+  grid-row: 16 / 18;
+  margin-top: 10rem;
+}
+
+.map__header {
+  margin: 3rem 0;
+  margin-left: 5rem;
+}
+
+.map iframe {
+  -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
+          box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
 }
 
 .form {
@@ -1831,55 +1951,6 @@ small {
 
 .footer__social ul li a {
   font-size: 300%;
-}
-
-.footer__social ul li a .social-1 {
-  font-family: 'social-icons-brands';
-  color: #ffffff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.footer__social ul li a .social-1:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.footer__social ul li a .social-2 {
-  font-family: 'social-icons-solid';
-  font-size: inherit;
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.footer__social ul li a .social-2:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.footer__social ul li a .social-3 {
-  font-family: 'social-icons-solid';
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.footer__social ul li a .social-3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.footer__social ul li a .social-4 {
-  font-family: 'social-icons-solid';
-  color: #fff;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.footer__social ul li a .social-4:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .footer__copy {

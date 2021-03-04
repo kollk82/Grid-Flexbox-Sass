@@ -16,10 +16,64 @@
     &__form{
         width: 50%;
         height: auto;
-
+        float: left;
         &-header{
             text-align: center;
         }
     }
+
+    &__address{
+        width: 50%;
+        height: auto;
+        float: left;
+        &-header{
+            text-align: center;
+        }
+        &-box{
+            height: 50rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-secondary; 
+            margin-left: 4rem;
+            font-size: 400%;
+            font-family: 'Sansita-medium';
+            ul{
+                li{
+                    padding: 5rem 0;
+                    display: block;
+                    i{
+                        margin-right: 2rem;
+                        font-size: 200%;
+                        color: rgb(243, 175, 73);
+                        vertical-align: middle;
+                    }   
+                    a{
+                        color: $color-secondary; 
+                        &:hover{
+                            color: $color-tirtiary;
+                        }
+                                           
+                    }
+                }
+            }            
+        }
+    }
  }
- 
+ .map{
+
+    grid-column: 2 / 12;
+    grid-row: 16 / 18;
+
+    margin-top: 10rem;
+
+    &__header{
+        margin: 3rem 0;
+        margin-left: 5rem;
+
+    }
+    iframe{
+        box-shadow: $shadow;
+    }
+
+ }

@@ -43,7 +43,7 @@
             cursor: pointer;
             border: 4rem solid  $color-secondary;
             opacity: .9;
-            
+            overflow: hidden;
             a{
                 width: 70rem;
                 height: 35rem;
@@ -66,7 +66,7 @@
                 transform: rotateY(10deg);
                 z-index: -9999;   
                 box-shadow: none;
-            
+                opacity: 1;
                 //   + .mywork__links-two{ // immediately followed
                      
                 //      transform: rotateY(30deg);
@@ -87,6 +87,7 @@
                 box-shadow: none;
                 transform: rotateY(10deg);
                 z-index: 9999;
+                opacity: 1;
             }
         }
     }

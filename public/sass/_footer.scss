@@ -45,39 +45,7 @@
                 a{
                     font-size: 300%;
                     
-                    .social-1{
-                        font-family: 'social-icons-brands';
-                        color: #ffffff;
-                        transition: all .2s;
-                        &:hover{
-                            transform: scale(1.1);
-                        }
-                    }
-                    .social-2{
-                        font-family: 'social-icons-solid';                        
-                        font-size: inherit;
-                        color: #fff;
-                        transition: all .2s;
-                        &:hover{
-                            transform: scale(1.1);
-                        }
-                    }
-                    .social-3{
-                        font-family: 'social-icons-solid';
-                        color: #fff;
-                        transition: all .2s;
-                        &:hover{
-                            transform: scale(1.1);
-                        }
-                    }
-                    .social-4{
-                        font-family: 'social-icons-solid';
-                        color: #fff;           
-                        transition: all .2s;
-                        &:hover{
-                            transform: scale(1.1);
-                        }           
-                    }
+                    //social icons
                 }
             }
         }
