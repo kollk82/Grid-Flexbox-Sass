@@ -3,9 +3,8 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px 10/16 = 62.5
-    //transform: translate3d(0,0,0);
     
-    background: linear-gradient(to bottom right, $color-primary-light, $color-primary) repeat;
+    background: linear-gradient($color-primary, $color-primary-light) repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

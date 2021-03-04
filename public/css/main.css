@@ -103,8 +103,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  background: -webkit-gradient(linear, left top, right bottom, from(#d3e0ea), to(#f6f5f5)) repeat;
-  background: linear-gradient(to bottom right, #d3e0ea, #f6f5f5) repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f5f5), to(#d3e0ea)) repeat;
+  background: linear-gradient(#f6f5f5, #d3e0ea) repeat;
   background-size: cover;
   scroll-behavior: smooth;
   height: 100%;
@@ -136,12 +136,12 @@ body {
   letter-spacing: .16rem;
   font-size: 1rem;
   font-family: 'Montserrat-400-italic';
-  color: #276678;
+  color: #f6f5f5;
 }
 
 .header-p span {
   font-family: 'Montserrat-600-semibold';
-  color: #1687a7;
+  color: #d3e0ea;
 }
 
 .lm {
@@ -172,7 +172,7 @@ small {
   display: block;
   position: fixed;
   z-index: 99999;
-  top: 2.6vh;
+  top: 4rem;
   right: -27rem;
   height: 6rem;
   width: 33rem;
@@ -270,9 +270,9 @@ small {
   -ms-grid-columns: 1fr (minmax(min-content, 14rem))[10] 1fr;
       grid-template-columns: 1fr repeat(10, minmax(-webkit-min-content, 14rem)) 1fr;
       grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
-  -ms-grid-rows: 12vh (min-content)[13] min-content 20rem;
-      grid-template-rows: 12vh repeat(13, -webkit-min-content) -webkit-min-content 20rem;
-      grid-template-rows: 12vh repeat(13, min-content) min-content 20rem;
+  -ms-grid-rows: 15rem (min-content)[13] min-content 20rem;
+      grid-template-rows: 15rem repeat(13, -webkit-min-content) -webkit-min-content 20rem;
+      grid-template-rows: 15rem repeat(13, min-content) min-content 20rem;
 }
 
 .btn {
@@ -318,13 +318,13 @@ small {
   -ms-grid-columns: minmax(min-content, 140px) 1fr 140px;
       grid-template-columns: minmax(-webkit-min-content, 140px) 1fr 140px;
       grid-template-columns: minmax(min-content, 140px) 1fr 140px;
-  -ms-grid-rows: 12vh;
-      grid-template-rows: 12vh;
+  -ms-grid-rows: 15rem;
+      grid-template-rows: 15rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  border-bottom: 2px solid #f6f5f5;
+  background: #2d768b repeat;
   -webkit-box-shadow: inset 0 -10px 30px -30px rgba(70, 70, 70, 0.4);
           box-shadow: inset 0 -10px 30px -30px rgba(70, 70, 70, 0.4);
 }
@@ -468,7 +468,7 @@ small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../img/me_01.png) no-repeat center center;
+  background: url(../img/me_02.png) no-repeat center center;
   background-size: cover;
   -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
           box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
@@ -1571,7 +1571,7 @@ small {
   -webkit-transform: rotateY(45deg);
           transform: rotateY(45deg);
   cursor: pointer;
-  border: 2rem solid #f6f5f5;
+  border: 4rem solid #276678;
   opacity: .9;
 }
 
@@ -1721,7 +1721,7 @@ small {
 }
 
 .contact__form {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -1737,6 +1737,7 @@ small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .form *:not(:nth-child(odd)) {
@@ -1748,6 +1749,8 @@ small {
 
 .form input, .form textarea {
   border-radius: 5px;
+  -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
+          box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
 }
 
 .form label {

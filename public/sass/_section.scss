@@ -20,7 +20,7 @@
         justify-content: center;
         flex-direction: column;
         
-        background: url(../img/me_01.png) no-repeat center center;
+        background: url(../img/me_02.png) no-repeat center center;
         background-size: cover;
         box-shadow: $shadow;
 
@@ -37,7 +37,6 @@
             transform: rotate(-90deg);
             z-index: 9999;
         }
-
 
         h1{
             display: inline-block;
@@ -62,8 +61,6 @@
                 z-index: -9999;
             }
     
-          
-         
         }
         h2{
             width: 100%;
