@@ -7,15 +7,22 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="162.12442mm"
-   height="139.76251mm"
-   viewBox="0 0 162.12442 139.76251"
+   width="197.18271mm"
+   height="214.77547mm"
+   viewBox="0 0 197.1827 214.77546"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="logo.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <rect
+       x="39.372215"
+       y="59.669277"
+       width="68.959892"
+       height="90.227898"
+       id="rect1022" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,9 +30,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-187.23426"
-     inkscape:cy="461.14245"
+     inkscape:zoom="0.41053452"
+     inkscape:cx="-8.8992065"
+     inkscape:cy="229.52348"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -33,9 +40,10 @@
      showguides="true"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="855"
-     inkscape:window-y="1432"
-     inkscape:window-maximized="1" />
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -52,19 +60,40 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-26.482517,-26.156059)">
+     transform="translate(6.829168,-32.825398)">
+    <path
+       style="fill:#ff5555;fill-opacity:1;stroke:none;stroke-width:0.377976;stroke-opacity:1"
+       d="M 30.759393,114.9061 1.1208459,51.781217 21.307122,42.303308 l 20.186276,-9.47791 22.088349,47.04429 22.088349,47.044292 20.186274,-9.47791 20.18628,-9.47791 7.5502,16.08059 7.5502,16.08059 -40.37256,18.95582 -40.372548,18.95582 z"
+       id="path1010" />
+    <path
+       style="fill:#ffaaaa;fill-opacity:1;stroke:none;stroke-width:0.377976;stroke-opacity:1"
+       d="m -6.563468,247.37081 c 0,-0.17229 6.98274,-15.77965 15.5172,-34.68302 14.33801,-31.75792 15.4872,-34.45594 15.12237,-35.5037 -0.21716,-0.62366 -7.25968,-16.35692 -15.65005,-34.9628 l -15.25522,-33.82887 17.78059,-0.0982 c 9.77933,-0.054 17.89324,0.031 18.03092,0.18899 0.13768,0.15798 7.26251,15.87085 15.83296,34.91751 l 15.58264,34.63026 -15.65207,34.72837 -15.65208,34.72835 -17.82863,0.0982 c -9.80574,0.054 -17.82863,-0.0428 -17.82863,-0.21505 z"
+       id="path1012" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:186.35px;line-height:1.25;font-family:sans-serif;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.970572;"
-       x="15.301517"
-       y="165.91856"
-       id="text12"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:10.5833px;line-height:1.25;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans Expanded';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="154.73503"
+       y="113.16154"
+       id="text1018"><tspan
          sodipodi:role="line"
-         id="tspan10"
-         x="15.301517"
-         y="165.91856"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:186.35px;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans';stroke-width:0.970572;fill:#333333;">L&gt;</tspan></text>
+         id="tspan1016"
+         x="154.73503"
+         y="113.16154"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans Expanded';stroke-width:0.264583"></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1020"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:10.5833px;line-height:1.25;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans Expanded';white-space:pre;shape-inside:url(#rect1022);fill:#000000;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:38.1px;line-height:1.25;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans Expanded';fill:#ff5555;fill-opacity:1;stroke:none;stroke-width:0.390539"
+       x="66.147644"
+       y="221.53191"
+       id="text1032"><tspan
+         sodipodi:role="line"
+         id="tspan1030"
+         x="66.147644"
+         y="221.53191"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:expanded;font-size:38.1px;font-family:'Black Han Sans';-inkscape-font-specification:'Black Han Sans Expanded';fill:#ff5555;fill-opacity:1;stroke-width:0.390539">KOLLK</tspan></text>
   </g>
 </svg>

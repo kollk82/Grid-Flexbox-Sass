@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 99999;
     top: 4rem;
-    right: -27rem;
+    right: 0rem;
     
     height: 6rem;
     width: 33rem;
@@ -14,18 +14,32 @@
     background-color: $color-primary-light;
     box-shadow: $shadow;
     border-radius: 1rem 0 0 1rem;  
-    line-height: 1.4;        
+    line-height: 1.4;   
+
+    @include for-size(phone-only){
+
+        right: -27rem;
+      
+    }
+
     @include ie-fix {
         margin-top: 20px;
     }
     
-    transition: transform .4s ease-out;
+    transition: transform .3s ease-out;
     &:hover,
     &:visited{
-        transform: translateX(-27rem);
-        .nav__link{
+        transform: translateX(0rem);
+
+        @include for-size(phone-only){
+
+            transform: translateX(-27rem);
+    
+        }
+        a{
             opacity: 1;
             visibility: visible;
+           
         }
         &::before{
             opacity: 0;
@@ -36,37 +50,78 @@
         li{
             display: inline-block;
             text-transform: uppercase;
+            
             &:not(:last-child){
                 margin-right: 2rem;
             }
-        }
-    }
-    &__link{
-        font-family: 'Nav', sans-serif;
-        font-weight: 400;
-        font-size: 2rem;
-        //line-height: 1;
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity .5s;
-        transition-delay: .3s;
-        transition: color .2s;
+            a{
+                font-family: 'Nav'; 
+                font-weight: 400;
+                font-size: 2rem;
+                
+                width: 100%;
+                transition: color .3s;
+                
+                position: relative;
 
-        &:visited,
-        &:link{            
-            color: $color-secondary;
-        }
-        &:hover,
-        &:active{
-            color: $color-tirtiary;
-            text-decoration: underline;
-        }
-        &:active{
-            color: $color-primary-light;
-            text-decoration: none;
+                @include for-size(phone-only){
+        
+                    opacity: 0;
+                    visibility: hidden;
+                  
+                }
+                text-decoration: none;
+               
+                &:visited,
+                &:link{            
+                    color: $color-secondary;
+                }
+                &::after{                        
+                    content: '';
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    height: 2px;
+                    width: 0%;
+                    background-color: $color-tirtiary-dark;       
+                    opacity: 0;          
+                    transition: all .3s ease-out;                    
+                }
+                &::before{                        
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 2px;
+                    width: 0%;
+                    background-color: $color-tirtiary-dark;       
+                    opacity: 0;          
+                    transition: all .3s ease-out;
+                    
+                }
+                &:hover{
+                    color: $color-dark;
+
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        background-color: $color-border-img;
+                    }  
+                    &::before{
+                        opacity: 1;
+                        width: 100%;
+                        background-color: $color-orange;
+                       
+                    }        
+
+                }
+                &:active{
+                    color: $color-secondary;
+                }
+            }
         }
     }
+    
     &::before{
         content: '|||';
         font-family: 'Nav', sans-serif;
@@ -77,8 +132,15 @@
         bottom: .8rem;
         left: 1.5rem;
         letter-spacing: .3rem;
-        opacity: 1;
-        visibility: visible;
+        opacity: 0;
+        visibility: hidden;
         transition: all .2s;
+
+        @include for-size(phone-only){
+            
+            opacity: 1;
+            visibility: visible;
+          
+        }
     }
 }

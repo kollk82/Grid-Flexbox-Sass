@@ -20,7 +20,7 @@
         justify-content: center;
         flex-direction: column;
         
-        background: url(../img/me_02.png) no-repeat center center;
+        background: url(../img/image09.jpg) no-repeat center center;
         background-size: cover;
         box-shadow: $shadow;
         color: $color-font-header;
@@ -32,7 +32,7 @@
             right: 20rem;
             font-size: 1900%;
             position: absolute;
-            color: $color-secondary;
+            color: #ff5555;
             transform: rotate(-90deg);
             z-index: 9999;
         }
@@ -65,7 +65,7 @@
             width: 100%;
             text-align: center;
             margin-left: -10rem;
-            color: $color-primary;
+            color: grey;
             line-height: 145%;
             z-index: 9999;
             position: relative;

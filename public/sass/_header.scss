@@ -3,46 +3,40 @@
 .header{
     grid-column: 1 / -1;
     grid-row: 1;
-    
+
     display: grid;
-    
+
     grid-template-columns: minmax(min-content, 140px) 1fr 140px;
     grid-template-rows: 15rem;
-    
+
     align-items: center;
     justify-items: center;
 
 
     background: lighten($color-secondary, 5%) repeat;
-    //border-bottom: 1px solid $color-secondary;
-    box-shadow: inset 0 -10px 30px -30px  $shadow-bottom;
+    box-shadow: inset 0 -40px 40px -20px  $shadow-bottom;
 
     @include ie-fix {
         width: 100vw;
     }
-    
     &__photo{
-        grid-column: 1;         
+        grid-column: 1;
         
-        cursor: pointer;
-        transition: transform .5s;
-        &:hover{
-            transform: scale(1.1);
-        }
         &-logo{
 
             display: block;
-            background: url("../img/logo.png") no-repeat center;
-            width: 7rem;
-            height: 6rem;     
-            background-size: 50%;
-            border-radius: 1rem;  
-            background-color: $color-primary-light;
-            box-shadow: $shadow;    
+            background: url("../img/logo.svg") no-repeat center center;
+            width: 20rem;
+            height: 15rem;
+            background-size: 85%;
+            background-position: 3rem;
+            // border-radius: 1rem;
+            // background-color: $color-primary-light;
+            // box-shadow: $shadow;
 
         }
          // Solution for IE 10 & IE 11
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
             .logo-img{
 
@@ -55,17 +49,17 @@
                 height: 4em;
                 padding: 2.2em;
                 margin: 1rem;
-                border-radius: .5em;                           
+                border-radius: .5em;
             }
         }
-    }  
+    }
     &__mindetails  {
         grid-column: 2;
         height: min-content;
         display: flex;
-        
+
         align-items: center;
-        
+
         &-left,
         &-right{
             display: block;
@@ -81,15 +75,14 @@
                 width: 6rem;
                 height: 6rem;
                 float: right;
-                //background-color: rgb(153, 98, 98);
             }
         }
         &-center{
-            
+
             display: block;
-            width: 7rem;       
+            width: 7rem;
             height: auto;
-            
+
             .center-img{
                 display: block;
                 width: 100%;
@@ -100,14 +93,13 @@
             }
         }
         &-right{
-            
+
             .right-shape{
                 shape-outside: circle(50%);
                 clip-path: circle(50%);
                 width: 6rem;
                 height: 6rem;
                 float: left;
-                //background-color: rgb(153, 98, 98);
             }
         }
     }

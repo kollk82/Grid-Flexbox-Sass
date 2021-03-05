@@ -31,28 +31,23 @@
         
         justify-content: center;
       
-        border-radius: 4px;
-        box-shadow: $shadow;
-        background-color: $color-primary;
-       
+        border-radius: 4px;           
+
         > *{
             width: 23.33333rem;
             height: 23.3333rem;
             object-fit: cover;
-            justify-content: space-around;
-            border-radius: 4px;
-            opacity: .5;
-            transition: all .2s;
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                    filter: grayscale(100%);
-                    filter: blur(3px);
+            margin: .5rem;
+            opacity: 1;
+            transition: all 1s;
+            border: 1rem solid $color-tirtiary;
             
             &:hover{
+                display: block;
                 opacity: 1;
-                transform: scale(1.1);
-                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-                        filter: grayscale(0%);
-                        filter: brightness(90%);
+                transform: scale(1.4);
+                z-index: 9999;
+                border: 1rem solid $color-tirtiary;               
             }
         }
     }
