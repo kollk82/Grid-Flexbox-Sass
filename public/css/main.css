@@ -500,7 +500,7 @@ small {
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
   color: #313131;
-  border-bottom: 1px solid #f6f5f5;
+  border-bottom: 1px solid #d3e0ea;
 }
 
 .section__top {
@@ -1719,7 +1719,7 @@ small {
   border-radius: 4px;
   -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
           box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
-  background-color: #adadad;
+  background-color: #f6f5f5;
 }
 
 .gallery__photos > * {

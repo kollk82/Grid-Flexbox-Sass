@@ -33,7 +33,7 @@
       
         border-radius: 4px;
         box-shadow: $shadow;
-        background-color: #adadad;
+        background-color: $color-primary;
        
         > *{
             width: 23.33333rem;
@@ -53,19 +53,6 @@
                 -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
                         filter: grayscale(0%);
                         filter: brightness(90%);
-                //position: relative;
-
-                // &::after{
-                //     content: '';
-                //     display: block;
-                //     position: absolute;
-                //     width: 35rem;
-                //     height: 35rem;
-                //     top: 0;
-                //     left: 0;
-                //     z-index: 10;
-                //     background-color: red;
-                // }                
             }
         }
     }
