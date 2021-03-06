@@ -5,12 +5,12 @@
     font-family: 'Montserrat-400-regular';
     font-weight: 400;
     font-size: 100%;
-    text-align: justify;
+    text-align: left;
     letter-spacing: .1rem;
     line-height: 145%;
 
     &::first-letter{
-        font-family: 'Sansita-medium';
+        font-family: 'Montserrat-600-semibold';
         color: $color-primary-light;
         font-size: 200%;
     }

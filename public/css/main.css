@@ -120,13 +120,13 @@ body {
   font-family: 'Montserrat-400-regular';
   font-weight: 400;
   font-size: 100%;
-  text-align: justify;
+  text-align: left;
   letter-spacing: .1rem;
   line-height: 145%;
 }
 
 .section-p::first-letter {
-  font-family: 'Sansita-medium';
+  font-family: 'Montserrat-600-semibold';
   color: #d3e0ea;
   font-size: 200%;
 }
