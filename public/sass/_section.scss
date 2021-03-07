@@ -27,17 +27,6 @@
         position: relative;
         overflow: hidden;
         padding-bottom: 3.2rem;
-       
-        // &::after{
-        //     content: ' \21B2';         
-        //     bottom: 0rem;
-        //     right: 20rem;
-        //     font-size: 1900%;
-        //     position: absolute;
-        //     color: #ff5555;
-        //     transform: rotate(-90deg);
-        //     z-index: 9999;
-        // }
 
         h1{
             text-align: left;
@@ -45,31 +34,17 @@
             position: relative;
             opacity: .9;
             overflow: hidden;
-
-            // &::before{
-            //     content: '';
-            //     display: block;
-            //     background-color: $color-secondary;
-            //     opacity: 1;
-            //     position: absolute;
-            //     top: -30rem;
-            //     left: -30rem;
-            //     width: 49rem;
-            //     height: 11rem;
-            //     z-index: -9999;
-            //     transform: rotate(-26deg);
-            // }
         }
         h2{
             text-align: left;
             width: 70%;
+            white-space: nowrap;
         }
         h1, h2{
             margin-left: 17rem;
             color: rgb(240, 240, 240);
             position: relative;
             opacity: 1;
-            overflow: hidden;
             &::before{
                 content: '';
                 display: block;

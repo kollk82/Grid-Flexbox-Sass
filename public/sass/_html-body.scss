@@ -4,7 +4,12 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px 10/16 = 62.5
     
-    background: linear-gradient(to bottom right, $color-primary-light 0%, $color-secondary 50%,$color-secondary 80%,$color-tirtiary 80%,$color-tirtiary-dark 100%) 100% no-repeat fixed;
+    //background: linear-gradient(to bottom right, $color-primary-light 0%, $color-secondary 50%,$color-secondary 80%,$color-tirtiary 80%,$color-tirtiary-dark 100%) 100% no-repeat fixed;
+    background: rgb(0,76,97);
+    background: -moz-linear-gradient(329deg, rgba(0,76,97,1) 0%, rgba(30,98,135,1) 15%, rgba(15,160,195,1) 34%, rgba(22,135,167,1) 34%, rgba(198,233,242,1) 75%, rgba(251,251,251,1) 75%, rgba(233,251,255,1) 100%) 100% no-repeat fixed;
+    background: -webkit-linear-gradient(329deg, rgba(0,76,97,1) 0%, rgba(30,98,135,1) 15%, rgba(15,160,195,1) 34%, rgba(22,135,167,1) 34%, rgba(198,233,242,1) 75%, rgba(251,251,251,1) 75%, rgba(233,251,255,1) 100%) 100% no-repeat fixed;
+    background: linear-gradient(329deg, rgba(0,76,97,1) 0%, rgba(30,98,135,1) 15%, rgba(15,160,195,1) 34%, rgba(22,135,167,1) 34%, rgba(198,233,242,1) 75%, rgba(251,251,251,1) 75%, rgba(233,251,255,1) 100%) 100% no-repeat fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004c61",endColorstr="#e9fbff",GradientType=1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
