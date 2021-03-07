@@ -23,10 +23,13 @@
     letter-spacing: .16rem;
     font-size: 1rem;
     font-family: 'Montserrat-400-italic';
+    font-weight: 400;
+    font-style: italic;
     color: $color-primary;
 
     span{
         font-family: 'Montserrat-600-semibold';
+        font-weight: 600;
         color:$color-primary-light;
     }
 }
@@ -34,17 +37,19 @@
     margin-left: 1rem;
 }
 h1,h2{
-    font-family: 'Sansita-medium';
+    font-family: 'Logo';
     font-weight: 400;
-    color: $color-secondary;
+    
     letter-spacing: 4px;
 }
 h1{
     font-size: 900%;
-    
+    color: $color-primary-light;
+
 }
 h2{
     font-size: 400%;
+    color: $color-secondary;
 }
 small{
     font-size: 150%;

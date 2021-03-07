@@ -1,7 +1,8 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 3rem;
+    width: 70%;
 
     *:not(:nth-child(odd)){
         padding: 2rem;

@@ -4,7 +4,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px 10/16 = 62.5
     
-    background: linear-gradient($color-primary, $color-primary-light) repeat;
+    background: linear-gradient(to bottom right, $color-primary-light 0%, $color-secondary 50%,$color-secondary 80%,$color-tirtiary 80%,$color-tirtiary-dark 100%) 100% no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

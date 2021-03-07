@@ -1,6 +1,7 @@
 //GRID
 
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
     grid-template-rows: 15rem repeat(15, min-content) 20rem;
