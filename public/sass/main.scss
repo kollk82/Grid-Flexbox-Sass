@@ -1,18 +1,31 @@
+// MAIN SASS FILES
+
+
+// variables, reset, mixins, animations, typography
+
 @import "var";
 @import "reset";
 @import "mixin";
 @import "animations";
-@import "html-body";
 @import "typography";
-@import "media";
+
+// html, body, 
+
+@import "html-body";
+
+// navigation, grid, buttons, form
+
 @import "nav";
 @import "grid";
 @import "buttons";
+@import "form";
+
+//section ->  header, main, footer
+
 @import "header";
 @import "section";
 @import "portfolio";
 @import "mywork";
 @import "gallery";
 @import "contact";
-@import "form";
 @import "footer";

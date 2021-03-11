@@ -10,6 +10,12 @@
 
     row-gap: 5rem;
 
+    @include for-size(phone-only){
+        grid-column: 1;
+        grid-row: 4;
+        display: block;
+    }
+
     &__header{
         grid-row: 1;
         grid-column: 1 / -1;
@@ -17,6 +23,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+       
+        @include for-size(phone-only){
+            height: 25rem;
+            h1{
+                color: $color-secondary;
+            }
+        }
     }
     &__links{
         grid-row: 2;
@@ -26,10 +39,15 @@
         flex-direction: row;
         justify-content: flex-end;
         align-self: center;
-        height: 35rem;
+        height: 100%;
         width: 100%;
         perspective: 1000px;
-        
+
+        @include for-size(phone-only){
+            justify-content: flex-start;
+            flex-direction: column;
+            perspective: none;
+        }
 
         &-one,
         &-two{
@@ -41,24 +59,43 @@
             object-fit: cover;
             transform: rotateY(45deg);
             cursor: pointer;
-            border: 4rem solid  $color-secondary;
-            opacity: .9;
+            border: 4rem solid $color-tirtiary;
+            opacity: .5;
             overflow: hidden;
+
+            @include for-size(phone-only){
+                width: 100%;
+                border: 2rem solid $color-tirtiary;
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+
             a{
                 width: 70rem;
                 height: 35rem;
                 z-index: 9999;
                 border-radius: inherit;
                 display: block;
+
+                @include for-size(phone-only){
+                    width: 100%;
+                    height: 30rem;
+                }
             }
         }
         &-one{
-           
             background-image: url(../img/work-1.jpg);
             filter: blur(2px);
             -webkit-filter: blur(2px);
             z-index: -9999;
             transform: rotateY(30deg);
+            @include for-size(phone-only){
+                filter: none;
+                transform: none;
+                margin-bottom: 4rem;
+                z-index: 0;
+            }
           
             &:hover {
                 filter: blur(0px);
@@ -67,11 +104,10 @@
                 z-index: -9999;   
                 box-shadow: none;
                 opacity: 1;
-                //   + .mywork__links-two{ // immediately followed
-                     
-                //      transform: rotateY(30deg);
-                //      z-index: 9999;
-                //  }
+                @include for-size(phone-only){
+                    transform: none;
+                    z-index: 0;
+                }
             }
         }
         &-two{
@@ -81,13 +117,21 @@
             -webkit-filter: blur(0px);
             z-index: 9999;            
             transform: rotateY(30deg);
+            @include for-size(phone-only){
+                margin-left: 0rem;
+                transform: none;
+                z-index: 0;
+            }
 
             &:hover {
-               
                 box-shadow: none;
-                transform: rotateY(10deg);
+                transform: none;
                 z-index: 9999;
                 opacity: 1;
+                @include for-size(phone-only){
+                    transform: none;
+                    z-index: 0;
+                }
             }
         }
     }

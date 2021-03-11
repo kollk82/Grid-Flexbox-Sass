@@ -1,9 +1,16 @@
+
 //MIXIN
+
+
+//fix fot IE
+
 @mixin ie-fix {
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
         @content
     }
 };
+//animation mixin
+
 @mixin animation($name, $width-1 ,$width-2) {
     @keyframes #{$name}{
         0%{width: $width-1; background-color: $color-tirtiary;}
@@ -26,3 +33,19 @@
         animation-timing-function: ease-out;
         opacity: .3;
 }
+
+// media mixin
+
+@mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (min-width: 900px) { @content; }
+    } @else if $size == desktop-up {
+      @media (max-width: 1400px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) { @content; }
+    }
+  }

@@ -5,17 +5,26 @@
     grid-column: 2 / span 10;
     grid-row: 12;
 
+    @include for-size(phone-only){
+        grid-column: 1;
+        grid-row: 3;
+        display: block;
+    }
+
     &__header{
-        grid-column: 1 / -1;
-        grid-row: 1;
 
         height: 50rem;
         display: flex;
         align-items: center;
         justify-content: center;
         
+        @include for-size(phone-only){
+            height: 25rem;
+            h1{
+                color: $color-secondary;
+            }
+        }
     }
-
     &__details,
     &__education,
     &__skills,
@@ -29,6 +38,10 @@
         display: flex;
         flex-direction: row;        
         margin: 5rem 0;
+        @include for-size(phone-only){
+           margin: 0 0 2rem 0;
+           flex-direction: column;
+        }
         &-table{
              
             border-spacing: 0 1rem;
@@ -45,6 +58,11 @@
                 &:hover{
                     transform: scale(1.1);
                     box-shadow: $shadow;
+                    @include for-size(phone-only){
+                        transition: none;
+                        transform: none;
+                        box-shadow: none;
+                    }
                 }
                 
             }
@@ -55,9 +73,18 @@
                 width: 25rem;
                 text-align: right;
                 transition: all .2s;
+                @include for-size(phone-only){
+                    padding-right: 2rem;
+                }
                 &:hover{
                     transform: scale(1.1);
                     box-shadow: $shadow;
+                    @include for-size(phone-only){
+                        transition: none;
+                        transform: none;
+                        box-shadow: none;
+
+                    }
                 }                
             }
             tr{
@@ -68,6 +95,10 @@
         h2{
             margin-left: 4rem;
             width: 30rem;
+            @include for-size(phone-only){
+                font-size: 250%;
+                margin-bottom: 2rem;
+            }
         }
     }
     &__skills,
@@ -265,10 +296,22 @@
     
             tr:nth-child(odd) td{
                 background-color: #fff;
+                @include for-size(phone-only){
+                    text-align: left;
+                    padding-left: 2rem;
+                }
             }
             width: 25rem;
             margin-left: 1.5rem;
-            
+            @include for-size(phone-only){
+                justify-self: center;
+                align-self: center;
+                width: 100%;
+                margin-left: 0rem; 
+                tr:nth-child(even) td{
+                    padding-right: 2rem;
+                }
+            }
         }
     }
 }

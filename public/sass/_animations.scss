@@ -1,15 +1,31 @@
 @keyframes anime-top {
     0%   { transform: translateY(-100rem);}
     80%  { transform: translateY(20rem);}
-    100%  { transform: translateY(0rem);}
+    100% { transform: translateY(0rem);}
 }
 @keyframes anime-middle {
     0%   { transform: translateX(-120rem);}
     80%  { transform: translateX(20rem);}
-    100%  { transform: translateX(0rem);}
+    100% { transform: translateX(0rem);}
 }
 @keyframes anime-bottom {
     0%   { transform: translateX(150rem);}
     80%  { transform: translateX(-20rem);}
-    100%  { transform: translateX(0rem);}
+    100% { transform: translateX(0rem);}
+}
+
+@keyframes slider{
+    0%   {background-image: url(../img/Carousel/img_01.jpg);}
+    15.99%   {background-image: url(../img/Carousel/img_01.jpg);}
+    16%  {background-image: url(../img/Carousel/img_02.jpg);}
+    31.99%  {background-image: url(../img/Carousel/img_02.jpg);}
+    32%  {background-image: url(../img/Carousel/img_03.jpg);}
+    47.99%  {background-image: url(../img/Carousel/img_03.jpg);}
+    48% {background-image: url(../img/Carousel/img_04.jpg);}
+    63.99% {background-image: url(../img/Carousel/img_04.jpg);}
+    64%   {background-image: url(../img/Carousel/img_05.jpg);}
+    81.99%   {background-image: url(../img/Carousel/img_05.jpg);}
+    82%  {background-image: url(../img/Carousel/img_06.jpg);}
+    99.99%  {background-image: url(../img/Carousel/img_06.jpg);}
+    100%  {background-image: url(../img/Carousel/img_01.jpg);}
 }

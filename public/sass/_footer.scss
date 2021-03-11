@@ -13,8 +13,13 @@
     
     display: flex;
     align-items: center;
+    
     position: relative; 
     overflow: hidden;
+
+    @include for-size(phone-only){
+        flex-direction: column;
+    }
 
     &::before{
         content: '';
@@ -33,7 +38,9 @@
         text-align: center;
         border-right: 1px solid white;
         z-index: 1;
-
+        @include for-size(phone-only){
+            display: none;
+        }
         a{
             color: #dbdbdb;
             text-decoration: underline;
@@ -51,6 +58,9 @@
         height: 80%;
         margin: auto;
         z-index: 1;
+        @include for-size(phone-only){
+            width: 100%;
+        }
         ul{
             li{
                 padding: 0 2rem;
@@ -66,12 +76,20 @@
     }        
     &__copy{
         
-        width: 33.33%;
+        width: 33%;
         letter-spacing: .1rem;          
         text-align: center;
         border-left: 1px solid white;
         height: min-content;
         margin: auto;
         z-index: 1;
+        @include for-size(phone-only){
+            border-top: 1px solid $color-tirtiary-dark;
+            border-left: 0px solid white;
+            width: 90%;
+            height: 50%;
+            font-size: 80%;
+            padding-top: 3rem;
+        }
     }
 }

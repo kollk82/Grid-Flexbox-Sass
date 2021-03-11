@@ -11,12 +11,17 @@
     background-color: $color-tirtiary;
     color: $color-primary;
     text-transform: uppercase;
+    
     text-align: center;
     transition: all .15s;
     cursor: pointer;
     border-radius: 1rem;
     box-shadow: $shadow;  
-
+    @include for-size(phone-only){
+        font-size: 150%;
+        margin: 0 0 2rem 0;
+        width: auto;
+    }
     &:hover,
     &:active{
         background-color: $color-primary;

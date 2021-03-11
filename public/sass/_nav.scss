@@ -6,7 +6,13 @@
     z-index: 9999;
     top: 4rem;
     right: 0rem;
-    
+
+    @include for-size(desktop-up){
+        right: -30.5rem;
+        width: 37rem;
+        text-align: center;
+    }
+
     height: 6rem;
     width: 33rem;
     
@@ -16,30 +22,22 @@
     border-radius: 1rem 0 0 1rem;  
     line-height: 1.4;   
 
-    @include for-size(phone-only){
-
-        right: -27rem;
-      
-    }
-
     @include ie-fix {
         margin-top: 20px;
     }
     
     transition: transform .3s ease-out;
+    
     &:hover,
     &:visited{
         transform: translateX(0rem);
 
-        @include for-size(phone-only){
-
-            transform: translateX(-27rem);
-    
+        @include for-size(desktop-up){
+            transform: translateX(-30.5rem);
         }
         a{
             opacity: 1;
             visibility: visible;
-           
         }
         &::before{
             opacity: 0;
@@ -50,7 +48,10 @@
         li{
             display: inline-block;
             text-transform: uppercase;
-            
+
+            @include for-size(desktop-up){
+                text-align: right;
+            }            
             &:not(:last-child){
                 margin-right: 2rem;
             }
@@ -63,15 +64,12 @@
                 transition: color .3s;
                 
                 position: relative;
+                text-decoration: none;
 
-                @include for-size(phone-only){
-        
+                @include for-size(desktop-up){
                     opacity: 0;
                     visibility: hidden;
-                  
                 }
-                text-decoration: none;
-               
                 &:visited,
                 &:link{            
                     color: $color-secondary;
@@ -96,12 +94,10 @@
                     width: 0%;
                     background-color: $color-tirtiary-dark;       
                     opacity: 0;          
-                    transition: all .3s ease-out;
-                    
+                    transition: all .3s ease-out;                    
                 }
                 &:hover{
                     color: $color-dark;
-
                     &::after{
                         opacity: 1;
                         width: 100%;
@@ -110,10 +106,8 @@
                     &::before{
                         opacity: 1;
                         width: 100%;
-                        background-color: $color-orange;
-                       
+                        background-color: $color-orange;                       
                     }        
-
                 }
                 &:active{
                     color: $color-secondary;
@@ -121,7 +115,6 @@
             }
         }
     }
-    
     &::before{
         content: '|||';
         font-family: 'Nav', sans-serif;
@@ -136,11 +129,9 @@
         visibility: hidden;
         transition: all .2s;
 
-        @include for-size(phone-only){
-            
+        @include for-size(desktop-up){
             opacity: 1;
             visibility: visible;
-          
         }
     }
 }

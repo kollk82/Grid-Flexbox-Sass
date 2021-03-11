@@ -1,3 +1,4 @@
+
 //HEADER
 
 .header{
@@ -6,9 +7,16 @@
 
     display: grid;
 
+    
+
     grid-template-columns: minmax(min-content, 140px) 1fr 140px;
     grid-template-rows: 15rem;
 
+    @include for-size(phone-only){
+        grid-template-columns: 100vw;
+        grid-auto-rows: min-content;
+        overflow: visible; 
+    }
     align-items: center;
     justify-items: center;
     position: relative; 
@@ -46,6 +54,11 @@
         display: flex;
         align-items: center;
         z-index: 2;
+
+        @include for-size(phone-only){
+            display: none;
+        }
+
         &-left,
         &-right{
             display: block;

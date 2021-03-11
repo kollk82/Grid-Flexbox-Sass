@@ -35,6 +35,9 @@
 }
 .lm{
     margin-left: 1rem;
+    @include for-size(phone-only){
+        margin-left: 0rem;
+    }
 }
 h1,h2{
     font-family: 'Logo';
@@ -46,10 +49,18 @@ h1{
     font-size: 900%;
     color: $color-primary-light;
 
+    @include for-size(phone-only){
+        font-size: 400%;
+    }
+
 }
 h2{
     font-size: 400%;
     color: $color-secondary;
+
+    @include for-size(phone-only){
+        font-size: 110%;
+    }
 }
 small{
     font-size: 150%;
