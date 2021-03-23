@@ -1,8 +1,8 @@
 # Ultimate
 
--- Why Ultimate? NO MORE PORTFOLIOS PLEASE ><  
+-- Why Ultimate? NO MORE PORTFOLIOS PLEASE ><.  
 
 -- No server side here  
 -- but it's all about the GRID and FLEXBOX.  
 
---Thats it.  
+--That's it.  

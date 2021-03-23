@@ -99,6 +99,28 @@ ol, ul {
   list-style: none;
 }
 
+input, textarea, label {
+  outline: none;
+  border: none;
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+input:focus, textarea:focus, label:focus {
+  outline-style: none;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
 @-webkit-keyframes anime-top {
   0% {
     -webkit-transform: translateY(-100rem);
@@ -404,7 +426,6 @@ html {
   background: linear-gradient(329deg, #004c61 0%, #1e6287 15%, #0fa0c3 34%, #1687a7 34%, #c6e9f2 75%, #fbfbfb 75%, #e9fbff 100%) 100% no-repeat fixed;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004c61",endColorstr="#e9fbff",GradientType=1);
   background-size: cover;
-  scroll-behavior: smooth;
   height: 100%;
   max-width: 100vw;
 }
@@ -658,11 +679,28 @@ body {
   }
 }
 
-.form *:not(:nth-child(odd)) {
+.form .reqval {
+  text-align: right;
+  color: #d9534f;
+  height: .5rem;
+  width: 100%;
+}
+
+.form .success {
+  color: #5cb85c;
+  height: .5rem;
+  width: 100%;
+}
+
+.form .fail {
+  color: #d9534f;
+  height: .5rem;
+  width: 100%;
+}
+
+.form input, .form textarea {
   padding: 2rem;
   margin: 1.5rem 0;
-  border: none;
-  outline: none;
 }
 
 .form input, .form textarea {
@@ -670,6 +708,11 @@ body {
   -webkit-box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
           box-shadow: 0 1rem 2rem rgba(70, 70, 70, 0.4);
   background-color: #d3e0ea;
+}
+
+.form input:focus, .form textarea:focus {
+  border: none;
+  outline: none;
 }
 
 .form label {
@@ -2417,16 +2460,14 @@ body {
 
 @media (max-width: 599px) {
   .gallery__photos > * {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 100%;
     height: auto;
     border: 2rem solid #1687a7;
     -webkit-transition: none;
     transition: none;
   }
   .gallery__photos > *:first-child {
-    margin-left: 480rem;
+    margin-left: 370rem;
   }
 }
 

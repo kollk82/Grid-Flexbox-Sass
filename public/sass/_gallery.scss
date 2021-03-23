@@ -60,12 +60,12 @@
             border: 1rem solid $color-tirtiary;
 
             @include for-size(phone-only){
-                width: max-content;
+                width: 100%;
                 height: auto;
                 border: 2rem solid $color-tirtiary;
                 transition: none;
-               &:first-child{
-                margin-left: 480rem;
+                &:first-child{
+                    margin-left: 370rem;
                 }
             }
             &:hover{

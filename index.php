@@ -24,7 +24,7 @@
                     <li><a href="#home-smooth">Home</a></li>
                     <li><a href="#portfolio-smooth">Portfolio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#form">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <section class="header__photo">
@@ -82,7 +82,7 @@
                 </p>
             </div>
             <div class="section__right-btn">
-                <a class="btn" href="#form">contact</a>
+                <a class="btn" href="#contact">contact</a>
             </div>
         </section>
         <section class="portfolio">
@@ -270,41 +270,45 @@
                 <h1 id="gallery">~Gallery~</h1>
             </div>
             <div class="gallery__photos">
-                <img src="public/img/Gallery/IMG_0248.JPG_result.jpg" alt="picture1">
-                <img src="public/img/Gallery/IMG_0253.JPG_result.jpg" alt="picture2">
-                <img src="public/img/Gallery/IMG_0264_result.jpg" alt="picture3">
-                <img src="public/img/Gallery/IMG_0269_result.jpg" alt="picture4">
-                <img src="public/img/Gallery/IMG_0423_result.jpg" alt="picture5">
-                <img src="public/img/Gallery/IMG_0321.JPG_result.jpg" alt="picture6">
-                <img src="public/img/Gallery/IMG_0392_result.jpg" alt="picture7">
-                <img src="public/img/Gallery/IMG_0530_result.jpg" alt="picture8">
-                <img src="public/img/Gallery/IMG_0570_result.jpg" alt="picture9">
-                <img src="public/img/Gallery/IMG_0580_result.jpg" alt="picture10">
-                <img src="public/img/Gallery/IMG_0591_result.jpg" alt="picture11">
-                <img src="public/img/Gallery/IMG_0605_result.jpg" alt="picture12">
-                <img src="public/img/Gallery/IMG_8_result.jpg" alt="picture13">
-                <img src="public/img/Gallery/IMG_0269_result.jpg" alt="picture14">
-                <img src="public/img/Gallery/IMG_0605_result.jpg" alt="picture15">
+                <img src="public/img/Gallery/Image01.jpg" alt="picture1">
+                <img src="public/img/Gallery/Image02.jpg" alt="picture2">
+                <img src="public/img/Gallery/Image03.jpg" alt="picture3">
+                <img src="public/img/Gallery/Image04.jpg" alt="picture4">
+                <img src="public/img/Gallery/Image05.jpg" alt="picture5">
+                <img src="public/img/Gallery/Image06.jpg" alt="picture6">
+                <img src="public/img/Gallery/Image07.jpg" alt="picture7">
+                <img src="public/img/Gallery/Image08.jpg" alt="picture8">
+                <img src="public/img/Gallery/Image09.jpg" alt="picture9">
+                <img src="public/img/Gallery/Image10.jpg" alt="picture10">
             </div>
         </section>
         <section class="contact">
             <div class="contact__header">
-                <h1 id="form">~Contact~</h1>
+                <h1 id="contact">~Contact~</h1>
             </div>
             <div class="contact__form">
-                <div class="contact__form-header">
+                <div class="contact__form-header" id="form">
                     <h2>~Form~</h2>
                 </div>
-                <form action="#" class="form">
+
+                <?php require("private/php/validation.php") ?>
+
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#form" class="form" method="POST" novalidate>
                     <label>Name:</label>
-                    <input type="text" placeholder="Name" name="name" required>
+                    <input id="name" type="text" placeholder="Name *" name="name"  value="<?php if(isset($_POST["name"])) echo $_POST['name']; ?>">
+                    <?php echo "<div class='reqval'>" . $nameErr . "</div>"?>
                     <label>Subject:</label>
-                    <input type="text" placeholder="Subject" name="subject" required>
+                    <input id="subject" type="text" placeholder="Subject *" name="subject" value="<?php if(isset($_POST["subject"])) echo $_POST["subject"];?>">
+                    <?php echo "<div class='reqval'>" . $subjectErr. "</div>"?>
                     <label>Email:</label>
-                    <input type="email" placeholder="Email" name="email" required>
+                    <input id="email" type="email" placeholder="Email *" name="email" value="<?php if(isset($_POST["email"])) echo $_POST['email']; ?>">
+                    <?php echo "<div class='reqval'>" . $emailErr . "</div>"?>
                     <label>Message:</label>
-                    <textarea placeholder="Your message..."  required></textarea>
-                    <button class="btn" type="submit">Submit</button>
+                    <textarea id="content" placeholder="Your message *..." name="content"></textarea>
+                    <?php echo "<div class='reqval'>" . $contentErr . "</div>" ?>
+                    <?php require("private/php//mail.php") ?>
+                    <p>* required</p>
+                    <button class="btn" type="submit" name="submit">Submit</button>    
                 </form>
             </div>
             <div class="contact__address">

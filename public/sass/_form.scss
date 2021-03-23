@@ -7,18 +7,35 @@
         width: 100%;
         background-color: $color-primary;
     }
-
-    *:not(:nth-child(odd)){
+    .reqval{
+        text-align: right;
+        color: #d9534f;
+        height: .5rem;
+        width: 100%;
+    }
+    .success{
+        color: #5cb85c;
+        height: .5rem;
+        width: 100%;
+    }
+    .fail{
+        color: #d9534f;
+        height: .5rem;
+        width: 100%;
+    }
+    input, textarea{
         padding: 2rem;
-        margin: 1.5rem 0;
-        border: none;
-        outline: none;           
+        margin: 1.5rem 0;        
     }
 
     input, textarea{
         border-radius: 5px;
         box-shadow: $shadow;
         background-color: $color-primary-light;
+        &:focus{
+            border: none;
+            outline: none;
+        }
     }
     label{
         font-size: 1.6rem;
