@@ -1,14 +1,15 @@
-var ua = window.navigator.userAgent; 
-var msie = ua.indexOf('MSIE '); 
-    // IE 10 or older
-    if (msie > 0) { 
-        var element = document.getElementById("IE-only");
-        element.classList.remove("header__photo-logo");
-    }
-
-var trident = ua.indexOf('Trident/'); 
-    // IE 11
-    if (trident > 0) { 
-        var element = document.getElementById("IE-only");
-            element.classList.remove("header__photo-logo");
-    } 
+function click_logo() {
+    location.href = "http://www.kollk.com";
+};
+function isItIE() {
+    user_agent = navigator.userAgent;
+    var is_it_ie = user_agent.indexOf("MSIE ") > -1 || user_agent.indexOf("Trident/") > -1;
+    return is_it_ie;
+}
+if (isItIE()) {
+    var element = document.getElementById("body");
+    element.classList.add("iedelate");
+    var element = document.getElementById("html");
+    element.classList.add("iemsg");
+}
+window.onload = isItIE;

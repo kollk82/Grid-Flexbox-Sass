@@ -426,6 +426,7 @@ html {
   background: linear-gradient(329deg, #004c61 0%, #1e6287 15%, #0fa0c3 34%, #1687a7 34%, #c6e9f2 75%, #fbfbfb 75%, #e9fbff 100%) 100% no-repeat fixed;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004c61",endColorstr="#e9fbff",GradientType=1);
   background-size: cover;
+  scroll-behavior: smooth;
   height: 100%;
   max-width: 100vw;
 }
@@ -433,6 +434,15 @@ html {
 body {
   font-family: 'Montserrat-400-regular';
   font-weight: 300;
+}
+
+.iedelate {
+  display: none;
+}
+
+.iemsg {
+  background: #004c61 url("../img/ieonly.png") no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004c61",endColorstr="#e9fbff",GradientType=1);
 }
 
 .nav {
@@ -798,6 +808,7 @@ body {
   height: 15rem;
   background-size: 85%;
   background-position: 2rem -1.5rem;
+  cursor: pointer;
 }
 
 .header__mindetails {

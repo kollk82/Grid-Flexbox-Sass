@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm a Web Developer, Web Designer and Photographer based in Dublin, Ireland. This is my portfolio website. Please contact me if you have any queries at ceo@kollk.com."/>
+    <meta name="description" content="I'm a Web Developer, Web Designer and Photographer based in Dublin, Ireland. This is my portfolio website. Please contact me if you have any queries at ceo@kollk.com." />
     <link rel="apple-touch-icon" sizes="180x180" href="public/img//apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="public/img/favicon-16x16.png">
@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="public/css/all.css">
     <link rel="stylesheet" href="public/css/main.css">
     <title>Personal Portfolio / Web Development / Photography</title>
+    
 </head>
 
-<body>
+<body id="body">
     <div class="container" id="home-smooth">
         <header class="header">
             <nav class="nav">
@@ -27,7 +28,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <section class="header__photo">
+            <section class="header__photo" id="logo" onclick="click_logo()">
                 <div id="IE-only" class="header__photo-logo"></div>
                 <div class="logo-img"></div>
             </section>
@@ -54,13 +55,14 @@
                 </div>
             </section>
         </header>
-         <section class="section">         <!--First header section -->
+        <section class="section">
+            <!--First header section -->
             <div class="section__top">
                 <h1>Hi there,</h1>
                 <h2>my name is Lukasz and this is my</h2>
                 <h2>portfolio website</h2>
             </div>
-            <div class="section__left"> 
+            <div class="section__left">
                 <p class="section-p">
                     This site is designed and coded by me. It's basically a testimonial of my skills as a web developer. What you will find here is a list of my skills followed by education and much more, including a gallery with my recent work as I am a passionate photographer in free time...
                 </p>
@@ -69,7 +71,7 @@
                 <a class="btn" href="#portfolio-smooth">portfolio</a>
             </div>
             <div class="section__center">
-               <p class="section-p">
+                <p class="section-p">
                     Here in this section you can find a gallery. A gallery of my pictures taken in different scenarios starting with a landscape, portrait continuing with a nature photography up to my favourite automotive...
                 </p>
             </div>
@@ -77,7 +79,7 @@
                 <a class="btn" href="#gallery">Gallery</a>
             </div>
             <div class="section__right">
-                <p class="section-p">                    
+                <p class="section-p">
                     In this section you can contact me by simply sending me a query (connected to web development or photography) by filling the contact form. It's very short, it won't take much of your time and it can bring us fruitful cooperation in the future.
                 </p>
             </div>
@@ -99,7 +101,7 @@
                     <tr>
                         <th>DOB:</th>
                         <td>1982.08</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th>Location:</th>
                         <td>Dublin/Ireland</td>
@@ -116,7 +118,7 @@
                     <tr>
                         <th>2019</th>
                         <td>CCT Python Programming</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th>2014</th>
                         <td>IBAT Advanced Web Design</td>
@@ -127,7 +129,7 @@
                     </tr>
                 </table>
             </div>
-            
+
             <div class="portfolio__skills">
                 <h2>Skills</h2>
                 <table class="portfolio__skills-table">
@@ -142,7 +144,7 @@
                     <tr>
                         <th>js</th>
                         <td class="js">50</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th>php</th>
                         <td class="php">50</td>
@@ -160,7 +162,7 @@
                     <tr>
                         <th>python</th>
                         <td class="python">35</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th>django</th>
                         <td class="django">20</td>
@@ -177,7 +179,7 @@
                     <tr>
                         <th>sass</th>
                         <td class="sass">100</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th class="smaller-font">photoshop</th>
                         <td class="phts">70</td>
@@ -195,7 +197,7 @@
                     <tr>
                         <th>bootstrap</th>
                         <td class="boot">90</td>
-                    </tr>                    
+                    </tr>
                     <tr>
                         <th class="smaller-font">Lightroom</th>
                         <td class="ltr">100</td>
@@ -209,13 +211,13 @@
             <div class="portfolio__interests">
                 <h2>Interests</h2>
                 <table class="portfolio__interests-table">
-                    <tr>                        
+                    <tr>
                         <td>Photography</td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>Videography</td>
-                    </tr>                    
-                    <tr>                        
+                    </tr>
+                    <tr>
                         <td>Automotive</td>
                     </tr>
                     <tr>
@@ -223,16 +225,16 @@
                     </tr>
                 </table>
                 <table class="portfolio__interests-table lm">
-                    <tr>                        
+                    <tr>
                         <td>Books</td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>Swimming</td>
-                    </tr>                    
-                    <tr>                        
+                    </tr>
+                    <tr>
                         <td>Jogging</td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>Cycling</td>
                     </tr>
                 </table>
@@ -240,13 +242,13 @@
                     <tr>
                         <td>Traveling</td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>Hiking</td>
-                    </tr>                    
-                    <tr>                        
+                    </tr>
+                    <tr>
                         <td>Netflix</td>
                     </tr>
-                    <tr>                        
+                    <tr>
                         <td>Music</td>
                     </tr>
                 </table>
@@ -291,25 +293,25 @@
                     <h2>~Form~</h2>
                 </div>
 
-                <?php require("private/php/validation.php") ?>
-
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#form" class="form" method="POST" novalidate>
-                    <label>Name:</label>
-                    <input id="name" type="text" placeholder="Name *" name="name"  value="<?php if(isset($_POST["name"])) echo $_POST['name']; ?>">
-                    <?php echo "<div class='reqval'>" . $nameErr . "</div>"?>
-                    <label>Subject:</label>
-                    <input id="subject" type="text" placeholder="Subject *" name="subject" value="<?php if(isset($_POST["subject"])) echo $_POST["subject"];?>">
-                    <?php echo "<div class='reqval'>" . $subjectErr. "</div>"?>
-                    <label>Email:</label>
-                    <input id="email" type="email" placeholder="Email *" name="email" value="<?php if(isset($_POST["email"])) echo $_POST['email']; ?>">
-                    <?php echo "<div class='reqval'>" . $emailErr . "</div>"?>
-                    <label>Message:</label>
-                    <textarea id="content" placeholder="Your message *..." name="content"></textarea>
+                <?php include("../private/php/validation.php") ?>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#form" class="form" method="POST" novalidate>
+                    <label>Name *:</label>
+                    <input id="name" type="text" placeholder="Name" name="name" value="<?php if (isset($_POST["name"])) echo $_POST['name']; ?>">
+                    <?php echo "<div class='reqval'>" . $nameErr . "</div>" ?>
+                    <label>Subject *:</label>
+                    <input id="subject" type="text" placeholder="Subject" name="subject" value="<?php if (isset($_POST["subject"])) echo $_POST["subject"]; ?>">
+                    <?php echo "<div class='reqval'>" . $subjectErr . "</div>" ?>
+                    <label>Email *:</label>
+                    <input id="email" type="email" placeholder="Email" name="email" value="<?php if (isset($_POST["email"])) echo $_POST['email']; ?>">
+                    <?php echo "<div class='reqval'>" . $emailErr . "</div>" ?>
+                    <label>Message *:</label>
+                    <textarea id="content" placeholder="Your message..." name="content"></textarea>
                     <?php echo "<div class='reqval'>" . $contentErr . "</div>" ?>
-                    <?php require("private/php//mail.php") ?>
+                    <?php include("../private/php//mail.php") ?><br>
+                    <button class="btn" type="submit" name="submit">Submit</button>
                     <p>* required</p>
-                    <button class="btn" type="submit" name="submit">Submit</button>    
                 </form>
+                
             </div>
             <div class="contact__address">
                 <div class="contact__address-header">
@@ -318,7 +320,7 @@
                 <div class="contact__address-box">
                     <ul>
                         <li><a href="mailto:ceo@kollk.com"><i class="fas fa-envelope social-4"></i>ceo@kollk.com</a></li>
-                        <li>&nbsp;<i class="fas fa-map-marker-alt social-4"></i>&nbsp;Ireland&nbsp;Co.&nbsp;Dublin</li>                        
+                        <li>&nbsp;<i class="fas fa-map-marker-alt social-4"></i>&nbsp;Ireland&nbsp;Co.&nbsp;Dublin</li>
                     </ul>
                 </div>
             </div>
@@ -327,26 +329,26 @@
             <div class="map__header">
                 <h2>~Map~</h2>
             </div>
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>            
+            <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </section>
         <footer class="footer">
             <div class="footer__mail">
                 <small><a href="mailto:ceo@kollk.com">Send email</a></small>
             </div>
-            <div class="footer__social">                
+            <div class="footer__social">
                 <ul>
                     <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square social-1"></i></a></li>
                     <li><a href="http://www.instagram.com/clashofcars182" target="_blank"><i class="fas fa-camera social-2"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCRz3qSzQEpXApP8uAkYVGRw" target="_blank"><i class="fas fa-video social-3"></i></a></li>
                     <li><a href="mailto:ceo@kollk.com"><i class="fas fa-envelope social-4"></i></a></li>
-                </ul>                
+                </ul>
             </div>
             <div class="footer__copy">
-               <small>&copy; 2021 Copyright kollk.com. All rights reserved.</small>
+                <small>&copy; 2021 Copyright kollk.com. All rights reserved.</small>
             </div>
         </footer>
     </div>
-    <script src="public/js/jquery-3.5.1.min.js"></script>
-    <script src="public/js/code.js"></script>
+    <script type="text/javascript" src="public/js/code.js"></script>
 </body>
+
 </html>
