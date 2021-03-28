@@ -136,7 +136,8 @@
     }
     iframe{
         box-shadow: $shadow;
-
+        width: 100%;
+        height: 60rem;
         @include for-size(phone-only){
             height: 150%;
         }

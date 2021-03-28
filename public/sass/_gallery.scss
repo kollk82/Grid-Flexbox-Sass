@@ -64,6 +64,10 @@
                 height: auto;
                 border: 2rem solid $color-tirtiary;
                 transition: none;
+                @include firefox-only{
+                    height: 35rem;
+                    width: auto;
+                }
                 &:first-child{
                     margin-left: 370rem;
                 }

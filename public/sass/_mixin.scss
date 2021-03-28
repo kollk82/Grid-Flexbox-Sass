@@ -48,4 +48,13 @@
     } @else if $size == big-desktop-up {
       @media (min-width: 1800px) { @content; }
     }
+}
+@mixin firefox-only {
+  @at-root {
+    @-moz-document url-prefix() {
+      & {
+        @content;
+      }
+    }
   }
+}

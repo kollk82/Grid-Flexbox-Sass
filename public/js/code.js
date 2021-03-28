@@ -1,3 +1,5 @@
+window.onload=document.body.style.opacity='1';
+
 function click_logo() {
     location.href = "http://www.kollk.com";
 };

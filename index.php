@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="public/css/all.css">
     <link rel="stylesheet" href="public/css/main.css">
     <title>Personal Portfolio / Web Development / Photography</title>
-    
 </head>
 
 <body id="body">
@@ -293,7 +292,7 @@
                     <h2>~Form~</h2>
                 </div>
 
-                <?php include("../private/php/validation.php") ?>
+                <?php include("private/php/validation.php") ?>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#form" class="form" method="POST" novalidate>
                     <label>Name *:</label>
                     <input id="name" type="text" placeholder="Name" name="name" value="<?php if (isset($_POST["name"])) echo $_POST['name']; ?>">
@@ -307,7 +306,7 @@
                     <label>Message *:</label>
                     <textarea id="content" placeholder="Your message..." name="content"></textarea>
                     <?php echo "<div class='reqval'>" . $contentErr . "</div>" ?>
-                    <?php include("../private/php//mail.php") ?><br>
+                    <?php include("private/php//mail.php") ?><br>
                     <button class="btn" type="submit" name="submit">Submit</button>
                     <p>* required</p>
                 </form>
@@ -329,7 +328,7 @@
             <div class="map__header">
                 <h2>~Map~</h2>
             </div>
-            <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </section>
         <footer class="footer">
             <div class="footer__mail">
