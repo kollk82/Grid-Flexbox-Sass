@@ -2,7 +2,7 @@
 
 -- Why Ultimate? NO MORE PORTFOLIOS PLEASE ><.  
 
--- No server side here  
--- but it's all about the GRID and FLEXBOX.  
+-- php contact form 
+-- it's all about the GRID and FLEXBOX.  
 
---That's it.  
+-- That's it.  
